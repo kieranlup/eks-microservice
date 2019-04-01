@@ -3,16 +3,16 @@ stack:
   name: eks-microservice # Note: Update this with your stack name
   template:
     file: microservice.stack.yml
-    bucket: cim-stack-artifacts # Note: Update this with your bucket name.  Stacks are uploaded here prior to deployment.'
+    bucket: eks.kieranj # Note: Update this with your bucket name.  Stacks are uploaded here prior to deployment.'
 
   #
   # Define stack input parameters.
   #
   parameters:
-    AppName: 'eks-test'
-    GitHubOwner: 'thestacks-io'
+    AppName: 'eks-demo'
+    GitHubOwner: 'kieranlup'
     GitHubRepo: 'eks-microservice'
-    GitHubToken: '${kms.decrypt(AQICAHgiu9XuQb4FZRXrLn/77g1P99ZhS7/g3xOsvbvNpb+/qQH+sxP+if0SN0/QR0I3M9ehAAAAhzCBhAYJKoZIhvcNAQcGoHcwdQIBADBwBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDNTJCu1YrFM64MUL4AIBEIBD8zDL0Oc+8rQwr/7fJq+NyPB7vKJ/lNqqcmBBN9QS8XDFAqB9Vh9fkCUSilXs3HG3NL6EdLYaR9Z5blo7p2/HTmJrnw==)}'
+    GitHubToken: '${kms.decrypt(AQICAHi6gCjX562B8SohxehqMGkqdKzsuJ+VGK9Tj1isasCZXQEb/r0XXDOaHACdFPVcr3mDAAAAhzCBhAYJKoZIhvcNAQcGoHcwdQIBADBwBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDGSJRC3fgQ5+wYEeJAIBEIBDRbOYR4qm2ENd+SpU9BLKrGMgS3EB6h0gW9jFPzSOHAH43I++CObzNuEVqukZhacVNGjHzzp9bB0O6Waj4Gdwh8a3Zg==)}'
 
   #
   # Define stack capabilities required.

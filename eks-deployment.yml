@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: eks-microservice
-        image: <ecr-url>:<image-version>
+        image: 945516583997.dkr.ecr.us-east-2.amazonaws.com/eks-demo/web/prod:a327ca1e
         ports:
         - containerPort: 8000
           name: http-server
